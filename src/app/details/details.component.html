@@ -1,0 +1,9 @@
+<p>details works! {{ housingLocation?.id }}</p>
+<section class="listing">
+    <h2>{{ housingLocation?.name }}</h2>
+    <p class="listing-location">
+        {{ housingLocation?.city }}, {{ housingLocation?.state }}
+    </p>
+    <p>{{ housingLocation?.description }}</p>
+    <p>Price: {{ housingLocation?.price | currency }}</p>
+</section>

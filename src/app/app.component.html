@@ -1,8 +1,11 @@
 <main>
   <header class="brand-name">
-    <h1>My Angular App</h1>
+    <h1>My Angular App1</h1>
+    <a [routerLink]="['/']">
+        <h2>Home</h2>
+    </a>
   </header>
   <section class="content">
-    <app-home></app-home>
+    <router-outlet></router-outlet>
   </section>
 </main>
