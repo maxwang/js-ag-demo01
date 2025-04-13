@@ -7,3 +7,15 @@
     <p>{{ housingLocation?.description }}</p>
     <p>Price: {{ housingLocation?.price | currency }}</p>
 </section>
+<section class="listing-apply">
+    <h2>Apply  now to live here</h2>
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+        <label for="firstName">First Name</label>
+        <input id="firstName" formControlName="firstName" type="text" required />
+        <label for="lastName">Last Name</label>
+        <input id="lastName" formControlName="lastName" type="text" required /> 
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" type="email" required />
+        <button type="submit" class="primary">Apply now</button>
+    </form>
+</section>
